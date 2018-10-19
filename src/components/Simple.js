@@ -14,5 +14,9 @@ simple :
 }
 
 Simple.propTypes = {
-  tech: PropTypes.string.isRequired,
+  tech: PropTypes.string,
+};
+
+Simple.defaultProps = {
+  tech: 'fake',
 };

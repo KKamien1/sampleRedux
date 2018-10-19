@@ -5,10 +5,14 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-console": "off",
+    "no-unused-vars": "off",
+    "camelcase": "off",
+    "react/prop-types": "off",
     "no-underscore-dangle": [
       "error",
       { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }
-    ]
+    ],
+    "no-use-before-define": ["error", { "functions": false, "classes": true }]
   },
   "env": {
     "browser": true,
