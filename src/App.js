@@ -9,10 +9,11 @@ import store from './store';
 
 const App = () => {
   const { contacts, user, activeUserId } = store.getState();
+  const objContacts = _.values(contacts);
 
   return (
     <div className="App">
-      <Sidebar contacts={_.values(contacts)} />
+      <Sidebar contacts={objContacts} />
       <Main user={user} activeUserId={activeUserId} />
     </div>
   );

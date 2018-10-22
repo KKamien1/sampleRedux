@@ -1,10 +1,9 @@
 import { SET_ACTIVE_USER_ID } from '../constants/actions-types';
+import { getMessages } from '../static-data';
 
-export default (state = null, action) => {
+export default function messagesReducer(state = getMessages(10), action) {
   switch (action.type) {
-    case SET_ACTIVE_USER_ID:
-      return action.payload;
     default:
       return state;
   }
-};
+}
